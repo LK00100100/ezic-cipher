@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/script.js'></script>
+
+    <title>Ezic Cipher and Decoder</title>
+</head>
+
+<body>
+    <h1>Ezic Cipher</h1>
+
+    <p>
+        In the game, "Papers, please," our glorious checkpoint guard receives a decoder.
+    </p>
+
+    <div id="ezic-stuff">
+        <div id="cipher-box">
+            <table id="cipher-table">
+            </table>
+        </div>
+
+        <div id="decoder-box">
+            <table id="decoder-table">
+            </table>
+        </div>
+    </div>
+
+    <button id="btn-overlap" type="button">Overlap decoder</button>
+
+    <script>
+        let ezic = new EzicCipher();
+        ezic.init();
+    </script>
+</body>
+
+</html>
