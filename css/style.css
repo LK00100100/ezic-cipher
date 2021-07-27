@@ -1,18 +1,140 @@
+/* common */
+
+td {
+    padding: 0px;
+    width: 19px;
+}
+
+/* cipher */
+
 #cipher-box {
     font-family: 'Courier New', Courier, monospace;
     background-color: gainsboro;
     max-width: fit-content;
-    font-size:30px;
+    font-size: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 600px;
+    min-width: 500px;
 }
+
+#cipher-header {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 100px;
+}
+
+#cipher-dots-left {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+#cipher-square {
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 32%;
+    top: 7px;
+}
+
+#cipher-dots-right {
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+
+.dots {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 60px;
+    width: 60px;
+}
+
+.cipher-dot-top {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 70%;
+    top: 0px;
+}
+
+.cipher-dot-bottom {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+}
+
+#cipher-table {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* decoder */
 
 #decoder-box {
     font-family: 'Courier New', Courier, monospace;
     background-color: gainsboro;
     max-width: fit-content;
+    font-size: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 600px;
+    min-width: 500px;
 
-    font-size:30px;
+    position: relative;
+    top: 2px;
 }
 
-td {
-    padding: 0px;
+#decoder-header {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 100px;
+}
+
+#decoder-dots-left {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+#decoder-square {
+    display: inline-block;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 32%;
+    top: 7px;
+}
+
+#decoder-dots-right {
+    display: inline-block;
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+
+#decoder-table {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }

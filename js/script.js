@@ -10,7 +10,7 @@ class EzicCipher {
 
     init() {
         this.initCipherTable();
-        //this.initDecoderTable();
+        this.initDecoderTable();
     }
 
     initCipherTable() {
@@ -30,8 +30,25 @@ class EzicCipher {
 
             table.append(rowElem);
         }
+    }
 
+    initDecoderTable() {
+        let table = $("#decoder-table");
 
+        //create rows of letters
+        for (let r = 0; r < this.numRows; r++) {
+            let rowElem = $("<tr></tr>");
+            for (let c = 0; c < this.numCols; c++) {
+                let dataElem = $("<td></td>");
+
+                let char = "";
+                dataElem.text(char);
+
+                rowElem.append(dataElem);
+            }
+
+            table.append(rowElem);
+        }
     }
 
     /**
@@ -42,6 +59,5 @@ class EzicCipher {
 
         return this.candidateLetters.charAt(randomIdx);
     }
-
 
 }

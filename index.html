@@ -16,25 +16,53 @@
 </head>
 
 <body>
-    <h1>Ezic Cipher</h1>
+    <h1>Ezic Cipher and Decoder</h1>
 
     <p>
-        In the game, "Papers, please," our glorious checkpoint guard receives a decoder.
+        In the game, "Papers, please," our glorious border checkpoint guard receives a decoder.
+        <br><br>
+        Later, he receives an encrypted text from an anonymous person. He overlays the decoder
+        on top of the encrypted text. He aligns the encrypted stars with the decoder holes and
+        is able to make sense of the text by reading the holes like a book.
+        <br><br>
+        For the encrypted table, click a letter in the table and type in it to change it. You can type anything.
+        <br><br>
+        For the decoder table, click the overlay button to put the decoder over the holes.
+        It will become transparent when it is overlayed. Click a letter to make a hole.
     </p>
+    <button id="btn-overlap" type="button">Overlap decoder</button>
+    <br><br>
 
     <div id="ezic-stuff">
-        <div id="cipher-box">
+        <div id="cipher-box" style="display: inline-block;">
+            <div id="cipher-header">
+                <div id="cipher-dots-left" class="dots">
+                    <p class="cipher-dot-top">*</p>
+                    <p class="cipher-dot-bottom">*</p>
+                </div>
+                <div id="cipher-square">*</div>
+                <div id="cipher-dots-right" class="dots">
+                    <p class="cipher-dot-top">*</p>
+                    <p class="cipher-dot-bottom">*</p>
+                </div>
+            </div>
             <table id="cipher-table">
             </table>
         </div>
 
-        <div id="decoder-box">
+        <div id="decoder-box" style="display: inline-block;">
+            <div id="decoder-header">
+                <div id="decoder-dots-left" class="dots">
+                </div>
+                <div id="decoder-square">*</div>
+                <div id="decoder-dots-right" class="dots">
+                </div>
+            </div>
+
             <table id="decoder-table">
             </table>
         </div>
     </div>
-
-    <button id="btn-overlap" type="button">Overlap decoder</button>
 
     <script>
         let ezic = new EzicCipher();
